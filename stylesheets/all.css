@@ -16,26 +16,38 @@ body {
 }
 
 .title {
-  color: #006729;
   display: inline-block;
 }
 
 .title h1 {
+  font-size: 1.75em;
   font-weight: bold;
   padding-top: 5px;
   padding-left: 5px;
   padding-right: 5px;
 }
 
+.title a {
+  color: #006729;
+  text-decoration: none;
+}
+
+.title a:hover {
+  color: #006729;
+  text-decoration: underline;
+}
+
 .header h2 {
+  font-size: 1.4em;
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  float:left;
+  display: inline-block;
 }
 
-a:hover {
+.header h2 a:hover {
   color: #560053;
+  text-decoration: underline;
 }
 
 h2 a {
