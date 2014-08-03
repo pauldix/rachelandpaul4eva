@@ -4,9 +4,10 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.header {
+#header {
   text-align: center;
   height: 90px;
+  min-width: 1111px;
 }
 
 .separator {
@@ -16,13 +17,15 @@ body {
 }
 
 .title {
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 10px;
   display: inline-block;
 }
 
 .title h1 {
-  font-size: 1.75em;
+  font-size: 1.25em;
   font-weight: bold;
-  padding-top: 5px;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -37,15 +40,19 @@ body {
   text-decoration: underline;
 }
 
-.header h2 {
-  font-size: 1.4em;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+.nav {
   display: inline-block;
+
 }
 
-.header h2 a:hover {
+#header h2 {
+  font-size: 1.1em;
+  padding-left: 8px;
+  padding-right: 8px;
+  float: left;
+}
+
+#header h2 a:hover {
   color: #560053;
   text-decoration: underline;
 }
@@ -61,4 +68,37 @@ h2 a {
 
 .right {
   float: right;
+}
+
+#header {
+    position: fixed;
+    height: 85px;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#container { 
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 90px;
+}
+
+#couple {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+#home {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
 }
