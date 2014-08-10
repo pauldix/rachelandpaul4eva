@@ -2,12 +2,25 @@
 
 body {
   font-family: 'Josefin Sans', sans-serif;
+  color: #160056;
 }
 
+/*
+ HEADER
+*/
 #header {
   text-align: center;
-  height: 90px;
+  height: 70px;
   min-width: 1111px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background: white;
+}
+
+#home {
+  margin-top: -400px;
 }
 
 .separator {
@@ -70,35 +83,175 @@ h2 a {
   float: right;
 }
 
-#header {
-    position: fixed;
-    height: 85px;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-}
-
 #container { 
-  height: auto;
-  width: 100%;
-  overflow: hidden;
-  margin-top: 90px;
-}
-
-#couple {
-  height: 100%;
-  width: 100%;
-  position: fixed;
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
   text-align: center;
-  margin: 0px auto;
-  overflow: hidden;
 }
 
-#home {
-  min-height: 100%;
+#wedding_party {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  margin-top: 2000px;
+}
+
+.images img {
+  float: left;
+  padding-left: 5px;
+  padding-bottom:;
+}
+
+.circular {
+  opacity: 0.4;
+  float: left;
+  margin-left: 15px;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  box-shadow: 0 0 8px rgba(16, 0, 56, .9);
+  -webkit-box-shadow: 0 0 8px rgba(16, 0, 56, .9);
+  -moz-box-shadow: 0 0 8px rgba(16, 0, 56, .9);
+  background-size: cover;
+}
+
+.circular:hover {
+  opacity: 1.0;
+}
+
+#our_story .circular {
+  opacity: 1;
+  width: 240px;
+  height: 240px;
+  border-radius: 120px;
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;  
+}
+
+.timeline1 {
+  background: url(/images/timeline/1.jpg) no-repeat;
+  background-size: 90% 90%;
+}
+
+.timeline2 {
+  background: url(/images/timeline/2.jpg) no-repeat;
+  background-size: cover;
+}
+
+.timeline3 {
+  background: url(/images/timeline/3.jpg) no-repeat;
+  background-size: cover;
+}
+
+.timeline4 {
+  background: url(/images/timeline/4.jpg) no-repeat;
+  background-size: cover;
+}
+
+.timeline5 {
+  background: url(/images/timeline/5.jpg) no-repeat;
+  background-size: cover;
+}
+
+.timeline6 {
+  background: url(/images/timeline/6.jpg) no-repeat;
+  background-size: cover;
+}
+
+.timeline7 {
+  background: url(/images/timeline/7.jpg) no-repeat;
+  background-size: cover;
+}
+
+.timeline8 {
+  background: url(/images/timeline/8.jpg) no-repeat;
+  background-size: cover;
+}
+.timeline9 {
+  background: url(/images/timeline/9.jpg) no-repeat;
+  background-size: cover;
+}
+.timeline10 {
+  background: url(/images/timeline/10.jpg) no-repeat;
+  background-size: cover;
+}
+.timeline11 {
+  background: url(/images/timeline/11.jpg) no-repeat;
+  background-size: cover;
+}
+.timeline12 {
+  background: url(/images/timeline/12.jpg) no-repeat;
+  background-size: cover;
+}
+.timeline13 {
+  background: url(/images/timeline/13.jpg) no-repeat;
+  background-size: cover;
+}
+.timeline14 {
+  background: url(/images/timeline/14.jpg) no-repeat;
+  background-size: cover;
+}
+
+.amelia {
+  background: url(/images/amelia.jpg) no-repeat;
+  background-size: cover;
+}
+
+.selected {
+  opacity: 1.0;
+}
+
+.image-descriptions {
+  clear: both;
+  padding-top: 20px;
+}
+
+#our_story {
+  height: 500px;
   width: 100%;
+}
+
+#our_story > h2 {
+  left: 47%;
   position: relative;
-  text-align: center;
-  margin: 0 auto;
-  display: block;
+  margin-bottom: 60px;
+}
+
+.storybox {
+  font-size: 1.3em;
+  width: 375px;
+}
+
+.story-left {
+  text-align: right;
+}
+
+#nola {
+  left: 10%;
+  width: 80%;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.wrapper {
+  padding-top: 15px;
+  background: white;
+}
+
+#skrollr-body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.skrollable {
+  position: relative;
+}
+
+.timeline-separator {
+  clear: both;
+  margin-top: 100px;
 }

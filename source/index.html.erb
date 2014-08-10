@@ -15,25 +15,220 @@ title: Rachel and Paul 4 eva
   </div>
   <img class="right" src="images/rn_webheader_right.jpg" height="65px" />
   <div class="nav">
-    <h2><a href="#festivites">FESTIVITIES</a></h2>
+    <h2><a href="#festivities">FESTIVITIES</a></h2>
     <h2><a href="#details">DETAILS</a></h2>
     <h2><a href="#nola">NOLA</a></h2>
   </div>
   <div class="separator"></div>
 </div>
 
-<div id="home">
+<div id="skrollr_body">
+<div
+  id="home"
+  height="100%"
+  data-0="transform: translate3d(0px, -800px, 0px);"
+  data-500="transform: translate3d(0px, -1050px, 0px);"
+  style="z-index:-1; position:fixed;">
+  <img src="images/main_couple.jpg" width="100%" />
+</div>
+<% 
+@left_story_end = "left:20%;"
+@right_img_end = "left:25%;"
+
+@right_story_end = "left:40%;"
+@left_img_end = "left:35%;"
+%>
+<div class="wrapper">
+<div id="our_story">
+  <h2>Our Story</h2>
+  <div class="story">
+    <div class="storybox story-left" data-bottom-top="left:-100%;" data-center-top="<%= @left_story_end %>" style="float:left;">
+      <span>Sept. 2010</span>
+      <p>
+        A mutual friend - Rachel Heaton, aka Blade, aka Rayban, aka “bad Rachel” - invites Rachel to go to a book release party. The book is about Ruby, and Rachel thinks, “I love fine minerals!” She wonders why the author, Paul, pays so much attention to her at his party. The next day, they become Facebook friends.
+      </p>
+    </div>
+    <div class="circular timeline1" data-bottom-top="left:100%;" data-center-top="<%= @right_img_end %>" style="float:left;"></div>
+
+    <div class="timeline-separator"></div>
+
+    <div class="circular timeline2" data-bottom-top="left:-100%;" data-center-top="<%= @left_img_end %>" style="float:left;"></div>
+    <div class="storybox" data-bottom-top="left:100%;" data-center-top="<%= @right_story_end %>" style="float:left;">
+      <span>Fall and winter 2010</span>
+      <p>
+        Paul and Rachel hang out. Rachel drags Paul out to see “Case 39” and to the ice-skating rink; Paul teaches her about NYC karaoke, bodegas and sweet drinking spots. They go bowling and tie two games in a row (scores: 117 and 142). Paul makes a Brazilian feast for Rachel (farofa with bananas, fried yuca with habaneros and white fish with coconut sauce) - the first time he’s ever cooked for lady friend!        
+      </p>
+    </div>
+
+    <div class="timeline-separator"></div>
+
+    <div class="storybox story-left" data-bottom-top="left:-100%;" data-center-top="<%= @left_story_end %>" style="float:left;">
+      <span>March 2011</span>
+      <p>
+        Paul decides to woo Rachel on a spring break trip. Rachel chooses St. Lucia because it’s a new country and has interesting rock formations. They are both nervous about actually spending more than a few hours together at one time. Things work out: they are upgraded to the honeymoon suite and discover a mutual love of 90s music.
+      </p>
+    </div>
+    <div class="circular timeline3" data-bottom-top="left:100%;" data-center-top="<%= @right_img_end %>" style="float:left;"></div>
+
+    <div class="timeline-separator"></div>
+
+    <div class="circular timeline4" data-bottom-top="left:-100%;" data-center-top="<%= @left_img_end %>" style="float:left;"></div>
+    <div class="storybox" data-bottom-top="left:100%;" data-center-top="<%= @right_story_end %>" style="float:left;">
+      <span>July 2011</span>
+      <p>
+        Paul introduced Rachel as “his girlfriend” to someone he runs into at a baseball game. How presumptuous! But Rachel does not protest.
+      </p>
+    </div>
+
+    <div class="timeline-separator"></div>
+
+    <div class="storybox story-left" data-bottom-top="left:-100%;" data-center-top="<%= @left_story_end %>" style="float:left;">
+      <span>July 2011</span>
+      <p>
+        Rachel visits Denver for the first time, where she meets Paul’s family and friends, sees his old high school and site of his first tech-related job (Computer City!), and samples green chili and bison meat.
+      </p>
+    </div>
+    <div class="circular timeline5" data-bottom-top="left:100%;" data-center-top="<%= @right_img_end %>" style="float:left;"></div>
+
+    <div class="timeline-separator"></div>
+
+    <div class="circular timeline6" data-bottom-top="left:-100%;" data-center-top="<%= @left_img_end %>" style="float:left;"></div>
+    <div class="storybox" data-bottom-top="left:100%;" data-center-top="<%= @right_story_end %>" style="float:left;">
+      <span>September 2011</span>
+      <p>
+        Paul and Rachel move in together in Williamsburg, Brooklyn. Paul becomes the adoptive father of Rachel’s cat, Kit, aka, the Small Orange Baby. They celebrate with a hipster housewarming party.
+      </p>
+    </div>
+
+    <div class="timeline-separator"></div>
+
+    <div class="storybox story-left" data-bottom-top="left:-100%;" data-center-top="<%= @left_story_end %>" style="float:left;">
+      <span>May 2012</span>
+      <p>
+        Rachel takes Paul to Puerto Rico for his birthday. They take a terrifying single-prop, eight-seat flight to Culebra, where they see a sea turtle while snorkeling and meet <a href="http://green.blogs.nytimes.com/2012/08/13/defending-a-sanctuary-with-paint-and-song/" target="_">cool, mangrove-painting locals</a>.
+      </p>
+    </div>
+    <div class="circular timeline7" data-bottom-top="left:100%;" data-center-top="<%= @right_img_end %>" style="float:left;"></div>
+
+    <div class="timeline-separator"></div>
+
+    <div class="circular timeline8" data-bottom-top="left:-100%;" data-center-top="<%= @left_img_end %>" style="float:left;"></div>
+    <div class="storybox" data-bottom-top="left:100%;" data-center-top="<%= @right_story_end %>" style="float:left;">
+      <span>September 2012</span>
+      <p>
+        They venture to Asia for two weeks. Together, they <a href="http://www.scientificamerican.com/slideshow/komodo-dragons-rife-inequalities-between-the-sexes/" target="_">stalk Komodo dragons</a> and bathe out of a bucket in rural Indonesia. Rachel gets a large scar <a href="http://www.takepart.com/article/2012/12/12/mountain-bikers-hong-kong-offers-more-just-urban-jungles" target="_">mountain biking in Hong Kong</a>; Paul gets food poisoning at the airport in Malaysia.
+      </p>
+    </div>
+
+    <div class="timeline-separator"></div>
+
+    <div class="storybox story-left" data-bottom-top="left:-100%;" data-center-top="<%= @left_story_end %>" style="float:left;">
+      <span>January 2013</span>
+      <p>
+        Paul drags Rachel across the country for a three-month stint in San Francisco, where he takes part in a startup accelerator called Y Combinator. The Small Orange Baby comes along as Rachel’s psychiatrist-certified “comfort animal,” to get around their new apartment's no-pet regulations.
+      </p>
+    </div>
+    <div class="circular timeline9" data-bottom-top="left:100%;" data-center-top="<%= @right_img_end %>" style="float:left;"></div>
+
+    <div class="timeline-separator"></div>
+
+    <div class="circular timeline10" data-bottom-top="left:-100%;" data-center-top="<%= @left_img_end %>" style="float:left;"></div>
+    <div class="storybox" data-bottom-top="left:100%;" data-center-top="<%= @right_story_end %>" style="float:left;">
+      <span>July 2013</span>
+      <p>
+        On a two-week trip to Sweden and Norway, they explore a <a href="http://www.smithsonianmag.com/ist/?next=/travel/soviet-ghost-town-arctic-circle-pyramiden-stands-alone-180951429/" target="_">Soviet ghost town in Svalbard</a>, drink under the midnight sun and <a href="http://www.smithsonianmag.com/travel/deep-in-the-swedish-wilderness-discovering-one-of-the-worlds-greatest-restaurants-818172/" target="_">eat at one of the world’s best restaurants</a>. Scandinavia, they learn, is wildly expensive.
+      </p>
+    </div>
+
+    <div class="timeline-separator"></div>
+
+    <div class="storybox story-left" data-bottom-top="left:-100%;" data-center-top="<%= @left_story_end %>" style="float:left;">
+      <span>September 2013</span>
+      <p>
+        Paul takes Rachel to Bermuda “for her birthday.” He gets horribly seasick on a morning scuba diving excursion, and misses the second dive because his ears wouldn’t pop. Undeterred, that evening he proposes to Rachel on their hotel balcony at sunset, with champers! She says yes.
+      </p>
+    </div>
+    <div class="circular timeline11" data-bottom-top="left:100%;" data-center-top="<%= @right_img_end %>" style="float:left;"></div>
+
+    <div class="timeline-separator"></div>
+
+    <div class="circular timeline12" data-bottom-top="left:-100%;" data-center-top="<%= @left_img_end %>" style="float:left;"></div>
+    <div class="storybox" data-bottom-top="left:100%;" data-center-top="<%= @right_story_end %>" style="float:left;">
+      <span>March 2014</span>
+      <p>
+        They get a civil union so Rachel can piggyback on Paul’s health insurance policy. Romantic!
+      </p>
+    </div>
+
+    <div class="timeline-separator"></div>
+
+    <div class="storybox story-left" data-bottom-top="left:-100%;" data-center-top="<%= @left_story_end %>" style="float:left;">
+      <span>August 2014</span>
+      <p>
+        They ride two-humped camels together in the Gobi…
+      </p>
+    </div>
+    <div class="circular timeline13" data-bottom-top="left:100%;" data-center-top="<%= @right_img_end %>" style="float:left;"></div>
+
+    <div class="timeline-separator"></div>
+
+    <div class="circular timeline14" data-bottom-top="left:-100%;" data-center-top="<%= @left_img_end %>" style="float:left;"></div>
+    <div class="storybox" data-bottom-top="left:100%;" data-center-top="<%= @right_story_end %>" style="float:left;">
+      <span>September 2014</span>
+      <p>
+        They launch this website, and prepare to throw an amazing party for their family and friends!
+      </p>
+    </div>
+  </div>
 </div>
 
 <div id="container">
-  <div id="our_story">
-    <h1>Our Story</h1>
-  </div>
   <div id="wedding_party">
-    <h1>Wedding Party</h1>
+    <h2>Wedding Party</h2>
+    <h3>Bridesmaids</h3>
+    <div>
+      <div class="images">
+        <div class="circular amelia selected"></div>
+        <div class="circular amelia"></div>
+        <div class="circular amelia"></div>
+        <div class="circular amelia"></div>
+        <div class="circular amelia"></div>
+      </div>
+      <div class="image-descriptions">
+        <div id="amelia">
+          <h4>Amelia Joy Nuwer</h4>
+          <h5>Maid of Honor</h5>
+          <p>
+            I'm a brat with big fake boobies.
+          </p>
+        </div>
+        <div id="ali" style="display:none">
+          <h4>Ali Holder</h4>
+        </div>
+        <div id="jason" style="display:none">
+          <h4>Jason Lashbrook</h4>
+        </div>
+        <div id="amber" style="display:none">
+          <h4>Amber Williams</h4>
+        </div>
+        <div id="tracey" style="display:none">
+          <h4>Tracey Lee Williams</h4>
+        </div>
+      </div>
+    </div>
+    <h3>Groomsmen</h3>
+  </div>
+  <div id="festivities">
+    <h2>Festivities</h2>
+  </div>
+  <div id="details">
+    <h2>Details</h2>
   </div>
 </div>
 
-<div id="couple">
-  <img src="images/couple.jpg" />
+<div id="nola">
+  <h2>NOLA</h2>
+  <iframe src="https://mapsengine.google.com/map/embed?mid=zBqQFn71OnUg.kQNHV4RQn-Ds" width="100%" height="600"></iframe>
+</div>
+</div>
 </div>
