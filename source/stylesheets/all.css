@@ -262,10 +262,12 @@ h2, h3, h4, h5 {
   text-align: right;
 }
 
-.container {
-  left: 10%;
-  width: 80%;
-  position: relative;
+.container-big {
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .container-fixed {
@@ -324,7 +326,7 @@ h2, h3, h4, h5 {
 
   .parallax-image-wrapper-50 {
     height:50%;
-    top:-40%;
+    top:-30%;
   }
 
   .parallax-image-wrapper-100 {
