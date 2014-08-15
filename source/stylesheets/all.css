@@ -1,8 +1,14 @@
 @charset "utf-8";
 
+  * {
+    padding:0;
+    margin:0;
+  }
+
 body {
   font-family: 'Josefin Sans', sans-serif;
   color: #160056;
+  height:100%;
 }
 
 /*
@@ -17,10 +23,6 @@ body {
   width: 100%;
   z-index: 100;
   background: white;
-}
-
-#home {
-  margin-top: -400px;
 }
 
 .separator {
@@ -83,18 +85,41 @@ h2 a {
   float: right;
 }
 
-#container { 
+#wedding_party { 
   clear: both;
-  margin-left: auto;
-  margin-right: auto;
-  width: 700px;
   text-align: center;
 }
 
-#wedding_party {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
-  margin-top: 2000px;
+h2, h3, h4, h5 {
+  text-transform: uppercase;
+}
+
+#wedding_party h2, h3, h4, h5 {
+  margin: 10px;
+}
+
+#wedding_party p {
+  margin: 20px;
+}
+
+#wedding_party h2 {
+  font-size: 2em;
+}
+
+#wedding_party h3 {
+  font-size: 1.7em;
+}
+
+#wedding_party h4 {
+  font-size: 1.4em;
+}
+
+#wedding_party h5, p {
+  font-size: 1.3em;
+}
+
+.images {
+  margin-top: 25px;
 }
 
 .images img {
@@ -119,16 +144,16 @@ h2 a {
 }
 
 .circular:hover {
-  opacity: 1.0;
+  opacity: 7.0;
 }
 
 #our_story .circular {
   opacity: 1;
   width: 240px;
   height: 240px;
-  border-radius: 120px;
-  -webkit-border-radius: 120px;
-  -moz-border-radius: 120px;  
+  border-radius: 60px;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;  
 }
 
 .timeline1 {
@@ -200,6 +225,15 @@ h2 a {
   background-size: cover;
 }
 
+.tracey {
+  background: url(/images/tracey.jpg) no-repeat;
+  background-size: cover;
+}
+.ali {
+  background: url(/images/ali.jpg) no-repeat;
+  background-size: cover;
+}
+
 .selected {
   opacity: 1.0;
 }
@@ -210,7 +244,6 @@ h2 a {
 }
 
 #our_story {
-  height: 500px;
   width: 100%;
 }
 
@@ -229,22 +262,38 @@ h2 a {
   text-align: right;
 }
 
-#nola {
+.container {
   left: 10%;
   width: 80%;
   position: relative;
-  margin-bottom: 50px;
 }
 
-.wrapper {
-  padding-top: 15px;
-  background: white;
+.container-fixed {
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-#skrollr-body {
+.container-fixed:before, .container-fixed:after {
+    content: "";
+    height: 3px;
+    background: -moz-linear-gradient(left,  rgba(0,67,29,0) 0%, rgba(0,67,29,1) 50%, rgba(0,67,29,0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,67,29,0)), color-stop(50%,rgba(0,67,29,1)), color-stop(100%,rgba(0,67,29,0)));
+    background: -webkit-linear-gradient(left,  rgba(0,67,29,0) 0%,rgba(0,67,29,1) 50%,rgba(0,67,29,0) 100%);
+    background: -o-linear-gradient(left,  rgba(0,67,29,0) 0%,rgba(0,67,29,1) 50%,rgba(0,67,29,0) 100%);
+    background: -ms-linear-gradient(left,  rgba(0,67,29,0) 0%,rgba(0,67,29,1) 50%,rgba(0,67,29,0) 100%);
+    background: linear-gradient(to right,  rgba(0,67,29,0) 0%,rgba(0,67,29,1) 50%,rgba(0,67,29,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 );
+    display: block;
+}
+
+.container-separator {
   width: 100%;
-  height: 100%;
-  position: relative;
+  height: 1px;
+  background-image: radial-gradient(#006729, #FFF), radial-gradient(#006729, #FFF);
+  background-position: 0, 100%, 0, 100%;
 }
 
 .skrollable {
@@ -255,3 +304,100 @@ h2 a {
   clear: both;
   margin-top: 100px;
 }
+
+/* PARRALAX! */
+
+  html {
+    height:100%;
+  }
+
+  .skrollr-desktop body {
+    height:100% !important;
+  }
+
+  .parallax-image-wrapper {
+    position:fixed;
+    left:0;
+    width:100%;
+    overflow:hidden;
+  }
+
+  .parallax-image-wrapper-50 {
+    height:50%;
+    top:-40%;
+  }
+
+  .parallax-image-wrapper-100 {
+    height:100%;
+    top:-100%;
+  }
+
+  .parallax-image {
+    display:none;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+  }
+
+  .parallax-image-50 {
+    height:200%;
+    top:-40%;
+  }
+
+  .parallax-image-100 {
+    height:100%;
+    top:0;
+  }
+
+  .parallax-image.skrollable-between {
+    display:block;
+  }
+
+  .no-skrollr .parallax-image-wrapper {
+    display:none !important;
+  }
+
+  #skrollr_body {
+    height:100%;
+    overflow:visible;
+    position:relative;
+  }
+
+  .gap {
+    background:transparent center no-repeat;
+    background-size:cover;
+  }
+
+  .skrollr .gap {
+    background:transparent !important;
+  }
+
+  .gap-50 {
+    height:50%;
+  }
+
+  .gap-100 {
+    height:100%;
+  }
+
+  .header, .content {
+    background:#fff;
+    padding:1em;
+    margin-top: 40px;
+
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+  }
+
+  .content-full {
+    height:100%;
+  }
+
+  #festivities {
+    height: 400px;
+  }
