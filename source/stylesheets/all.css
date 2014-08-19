@@ -38,8 +38,14 @@ body {
   display: inline-block;
 }
 
+.nav h2 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
 .title h1 {
-  font-size: 1.25em;
+  margin-top: 15px;
+  font-size: 1.5em;
   font-weight: bold;
   padding-left: 5px;
   padding-right: 5px;
@@ -107,6 +113,18 @@ h2, h3, h4, h5 {
   margin-bottom: 30px;
 }
 
+#wedding_party p.outer-top {
+  margin-bottom: 0px;
+}
+
+#wedding_party p.inner {
+  margin: 10px;
+}
+
+#wedding_party p.outer-bottom {
+  margin-top: 0px;
+}
+
 #wedding_party h2 {
   font-size: 2em;
 }
@@ -149,6 +167,7 @@ h2, h3, h4, h5 {
 }
 
 .circular:hover {
+  cursor: pointer;
   opacity: 7.0;
 }
 
@@ -163,7 +182,7 @@ h2, h3, h4, h5 {
 
 .timeline1 {
   background: url(/images/timeline/1.jpg) no-repeat;
-  background-size: 90% 90%;
+  background-size: 97% 97%;
 }
 
 .timeline2 {
@@ -226,16 +245,74 @@ h2, h3, h4, h5 {
 }
 
 .amelia {
-  background: url(/images/amelia.jpg) no-repeat;
+  background: url(/images/ameliahead.jpg) no-repeat;
   background-size: cover;
 }
 
+.coulter {
+  background: url(/images/coulter.jpg) no-repeat;
+  background-size: cover;
+}
+
+.circular-big {
+  width: 220px;
+  height: 220px;
+  border-radius: 110px;
+  -webkit-border-radius: 110px;
+  -moz-border-radius: 110px;  
+}
+
+.rachel {
+  background: url(/images/rach2.jpg) no-repeat;
+  background-size: cover;
+}
+
+.paul {
+  background: url(/images/paul.png) no-repeat;
+  background-size: cover;
+}
+
+.xyla {
+  margin-left: 35%;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;  
+  background: url(/images/xyla.jpg) no-repeat;
+  background-size: cover;
+}
+.geej {
+  background: url(/images/geej.jpg) no-repeat;
+  background-size: cover;
+}
+.ty {
+  background: url(/images/ty.png) no-repeat;
+  background-size: cover;
+}
 .tracey {
   background: url(/images/tracey.jpg) no-repeat;
   background-size: cover;
 }
 .ali {
   background: url(/images/ali.jpg) no-repeat;
+  background-size: cover;
+}
+.amber {
+  background: url(/images/amber.jpg) no-repeat;
+  background-size: cover;
+}
+
+.nola-friday {
+  background: url(/images/nola_friday.jpg) no-repeat;
+  background-size: cover;
+}
+.the-elms {
+  background: url(/images/the_elms.jpg) no-repeat;
+  background-size: cover;
+}
+.the-columns {
+  background: url(/images/columns.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -268,9 +345,11 @@ h2, h3, h4, h5 {
 }
 
 #our_story > h2 {
+  margin-top: 20px;
   left: 47%;
   position: relative;
   margin-bottom: 60px;
+  text-decoration: underline;
 }
 
 .storybox {
@@ -298,7 +377,7 @@ h2, h3, h4, h5 {
   padding-bottom: 10px;
 }
 
-.container-fixed:before, .container-fixed:after {
+.container:before, .container:after, .container-border:before {
     content: "";
     height: 3px;
     background: -moz-linear-gradient(left,  rgba(0,67,29,0) 0%, rgba(0,67,29,1) 50%, rgba(0,67,29,0) 100%);
@@ -318,6 +397,11 @@ h2, h3, h4, h5 {
   background-position: 0, 100%, 0, 100%;
 }
 
+.wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .skrollable {
   position: relative;
 }
@@ -325,6 +409,11 @@ h2, h3, h4, h5 {
 .timeline-separator {
   clear: both;
   margin-top: 100px;
+}
+
+.separator-30 {
+  clear: both;
+  margin-top: 30px;
 }
 
 /* PARRALAX! */
@@ -409,7 +498,7 @@ h2, h3, h4, h5 {
   .header, .content {
     background:#fff;
     padding:1em;
-    margin-top: 40px;
+    margin-top: 20px;
 
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
