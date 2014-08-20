@@ -377,6 +377,23 @@ h2, h3, h4, h5 {
   padding-bottom: 10px;
 }
 
+.heading {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.festivities-text p {
+  margin-top: 20px;
+}
+
+.festivities-description {
+  text-align: center;
+}
+
+.festivities-text {
+  text-align: left;
+}
+
 .container:before, .container:after, .container-border:before {
     content: "";
     height: 3px;
@@ -391,6 +408,7 @@ h2, h3, h4, h5 {
 }
 
 .container-separator {
+  clear: both;
   width: 100%;
   height: 1px;
   background-image: radial-gradient(#006729, #FFF), radial-gradient(#006729, #FFF);
@@ -400,6 +418,29 @@ h2, h3, h4, h5 {
 .wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+#festivities .circular-big {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  float: left;
+}
+
+#festivities > h2 {
+  margin-top: 20px;
+  left: 47%;
+}
+
+.festivities-text {
+  float: left;
+  padding-left: 30px;
+  padding-top: 20px;
+  width: 400px;
+}
+
+.clear {
+  clear: both;
+  margin-bottom: 30px;
 }
 
 .skrollable {
@@ -507,8 +548,4 @@ h2, h3, h4, h5 {
 
   .content-full {
     height:100%;
-  }
-
-  #festivities {
-    height: 400px;
   }
