@@ -249,6 +249,11 @@ h2, h3, h4, h5 {
   background-size: cover;
 }
 
+.jason {
+  background: url(/images/jason.jpg) no-repeat;
+  background-size: cover;
+}
+
 .coulter {
   background: url(/images/coulter.jpg) no-repeat;
   background-size: cover;
@@ -384,6 +389,10 @@ h2, h3, h4, h5 {
 
 .festivities-text p {
   margin-top: 20px;
+}
+
+.festivities-text h4, h5 {
+  margin-left: 0px;
 }
 
 .festivities-description {
