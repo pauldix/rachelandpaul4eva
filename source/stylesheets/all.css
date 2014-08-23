@@ -405,6 +405,10 @@ h2, h3, h4, h5 {
   padding-bottom: 10px;
 }
 
+.container-fixed-small {
+  width: 500px;
+}
+
 .heading {
   text-align: center;
   padding-top: 20px;
