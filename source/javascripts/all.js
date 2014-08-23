@@ -9,5 +9,11 @@ $(window).load(function() {
     $(ev.target).parent().next().children().animate({"margin-left": offset});
     console.log("CLICK");
   });
+
+  $("ul.tabrow li").click(function(e) {
+    e.preventDefault();
+    $("ul.tabrow li").removeClass("selected");
+    $(this).addClass("selected");
+  });
   console.log("DONE!");
 });

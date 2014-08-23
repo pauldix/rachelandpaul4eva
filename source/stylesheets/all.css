@@ -5,6 +5,10 @@
     margin:0;
   }
 
+p {
+  line-height: 1.2em;
+}
+
 body {
   font-family: 'Josefin Sans', sans-serif;
   color: #160056;
@@ -83,6 +87,10 @@ h2 a {
   text-decoration: none;
 }
 
+a, a:visited {
+  color: #160056;  
+}
+
 .left {
   float: left;
 }
@@ -138,7 +146,12 @@ h2, h3, h4, h5 {
 }
 
 #wedding_party h5, p {
-  font-size: 1.3em;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+#details p {
+  margin-top: 15px;
 }
 
 .images {
@@ -246,6 +259,16 @@ h2, h3, h4, h5 {
 
 .amelia {
   background: url(/images/ameliahead.jpg) no-repeat;
+  background-size: cover;
+}
+
+.rob {
+  background: url(/images/rob.jpg) no-repeat;
+  background-size: cover;
+}
+
+.dave {
+  background: url(/images/dave.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -464,6 +487,22 @@ h2, h3, h4, h5 {
 .separator-30 {
   clear: both;
   margin-top: 30px;
+}
+
+th {
+  white-space: nowrap;
+}
+
+th, td {
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background: #EFECF7
+}
+
+table {
+  margin-bottom: 30px
 }
 
 /* PARRALAX! */
