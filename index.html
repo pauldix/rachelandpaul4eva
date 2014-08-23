@@ -1,15 +1,18 @@
 <!doctype html>
-<html>
+<html class="no-skrollr">
   <head>
     <meta charset="utf-8">
     
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
     <!-- Use title if it's in the page YAML frontmatter -->
     <title>Rachel and Paul 4 eva</title>
     
     <link href="/stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="/stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="/javascripts/all.js" type="text/javascript"></script>
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -25,32 +28,696 @@
   </div>
   <div class="title">
     <img class="left" src="images/rn_webheader_left_alligator.jpg" height="50px" />
-    <h1 class="left"><a href="#home">RACHEL &amp; PAUL<a></h1>
+    <h1 class="left"><a href="#home">RACHEL &amp; PAUL</a></h1>
     <img class="left" src="images/rn_webheader_right_alligator.jpg" height="50px" />
   </div>
   <img class="right" src="images/rn_webheader_right.jpg" height="65px" />
   <div class="nav">
-    <h2><a href="#festivites">FESTIVITIES</a></h2>
+    <h2><a href="#festivities">FESTIVITIES</a></h2>
     <h2><a href="#details">DETAILS</a></h2>
     <h2><a href="#nola">NOLA</a></h2>
   </div>
   <div class="separator"></div>
 </div>
 
-<div id="home">
-</div>
+  <div
+    class="parallax-image-wrapper parallax-image-wrapper-100"
+    data-anchor-target="#home + .gap"
+    data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+    data-top-bottom="transform:translate3d(0px, 0%, 0px)">
 
-<div id="container">
-  <div id="our_story">
-    <h1>Our Story</h1>
+    <div
+      class="parallax-image parallax-image-100"
+      style="background-image:url(images/main/sitting.jpg)"
+      data-anchor-target="#home + .gap"
+      data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+      data-top-bottom="transform: translate3d(0px, 80%, 0px);"
+    ></div>
+    <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
   </div>
-  <div id="wedding_party">
-    <h1>Wedding Party</h1>
-  </div>
-</div>
 
-<div id="couple">
-  <img src="images/couple.jpg" />
+  <div
+    class="parallax-image-wrapper parallax-image-wrapper-50"
+    data-anchor-target="#our_story + .gap"
+    data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+    data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+    <div
+      class="parallax-image parallax-image-50"
+      style="background-image:url(images/main/beach.jpg)"
+      data-anchor-target="#our_story + .gap"
+      data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+      data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+    ></div>
+  </div>
+
+  <div
+    class="parallax-image-wrapper parallax-image-wrapper-100"
+    data-anchor-target="#wedding_party + .gap"
+    data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+    data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+    <div
+      class="parallax-image parallax-image-100"
+      style="background-image:url(images/main/duomo.jpg)"
+      data-anchor-target="#wedding_party + .gap"
+      data-bottom-top="transform: translate3d(0px, -90%, 0px);"
+      data-top-bottom="transform: translate3d(0px, 90%, 0px);"
+    ></div>
+  </div>
+
+  <div
+    class="parallax-image-wrapper parallax-image-wrapper-50"
+    data-anchor-target="#festivities + .gap"
+    data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+    data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+    <div
+      class="parallax-image parallax-image-50"
+      style="background-image:url(images/main/hamptons.jpg)"
+      data-anchor-target="#festivities + .gap"
+      data-bottom-top="transform: translate3d(0px, -60%, 0px);"
+      data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+    ></div>
+  </div>
+
+  <div
+    class="parallax-image-wrapper parallax-image-wrapper-50"
+    data-anchor-target="#details + .gap"
+    data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+    data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+    <div
+      class="parallax-image parallax-image-50"
+      style="background-image:url(images/main/indonesia.jpg)"
+      data-anchor-target="#details + .gap"
+      data-bottom-top="transform: translate3d(0px, -30%, 0px);"
+      data-top-bottom="transform: translate3d(0px, 30%, 0px);"
+    ></div>
+  </div>
+
+  <div
+    class="parallax-image-wrapper parallax-image-wrapper-100"
+    data-anchor-target="#nola + .gap"
+    data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+    data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+    <div
+      class="parallax-image parallax-image-100"
+      style="background-image:url(images/main/norway.jpg)"
+      data-anchor-target="#nola + .gap"
+      data-bottom-top="transform: translate3d(0px, -50%, 0px);"
+      data-top-bottom="transform: translate3d(0px, 50%, 0px);"
+    ></div>
+  </div>
+<div id="skrollr_body">
+  <div id="home"></div>
+  <div class="gap gap-100" style="background-image:url(images/main/sitting.jpg);"></div>
+
+  <div id="our_story" class="content">
+    <div class="container-fixed container-border"></div>
+    <h2>Our Story</h2>
+    <div class="story">
+      <div class="storybox story-left" data-bottom-top="left:-100%;" data-center-top="left:20%;" style="float:left;">
+        <span>Sept. 2010</span>
+        <p>
+          A mutual friend - Rachel Heaton, aka Blade, aka Rayban, aka “bad Rachel” - invites Rachel to go to a book release party. The book is about Ruby, and Rachel thinks, “I love fine minerals!” She wonders why the author, Paul, pays so much attention to her at his party. The next day, they become Facebook friends.
+        </p>
+      </div>
+      <div class="circular timeline1" data-bottom-top="left:100%;" data-center-top="left:25%;" style="float:left;"></div>
+
+      <div class="timeline-separator"></div>
+
+      <div class="circular timeline2" data-bottom-top="left:-100%;" data-center-top="left:35%;" style="float:left;"></div>
+      <div class="storybox" data-bottom-top="left:100%;" data-center-top="left:40%;" style="float:left;">
+        <span>Fall and winter 2010</span>
+        <p>
+          Paul and Rachel hang out. Rachel drags Paul out to see “Case 39” and to the ice-skating rink; Paul teaches her about NYC karaoke, bodegas and sweet drinking spots. They go bowling and tie two games in a row (scores: 117 and 142). Paul makes a Brazilian feast for Rachel (farofa with bananas, fried yuca with habaneros and white fish with coconut sauce) - the first time he’s ever cooked for lady friend!        
+        </p>
+      </div>
+
+      <div class="timeline-separator"></div>
+
+      <div class="storybox story-left" data-bottom-top="left:-100%;" data-center-top="left:20%;" style="float:left;">
+        <span>March 2011</span>
+        <p>
+          Paul decides to woo Rachel on a spring break trip. Rachel chooses St. Lucia because it’s a new country and has interesting rock formations. They are both nervous about actually spending more than a few hours together at one time. Things work out: they are upgraded to the honeymoon suite and discover a mutual love of 90s music.
+        </p>
+      </div>
+      <div class="circular timeline3" data-bottom-top="left:100%;" data-center-top="left:25%;" style="float:left;"></div>
+
+      <div class="timeline-separator"></div>
+
+      <div class="circular timeline4" data-bottom-top="left:-100%;" data-center-top="left:35%;" style="float:left;"></div>
+      <div class="storybox" data-bottom-top="left:100%;" data-center-top="left:40%;" style="float:left;">
+        <span>July 2011</span>
+        <p>
+          Paul introduced Rachel as “his girlfriend” to someone he runs into at a baseball game. How presumptuous! But Rachel does not protest.
+        </p>
+      </div>
+
+      <div class="timeline-separator"></div>
+
+      <div class="storybox story-left" data-bottom-top="left:-100%;" data-center-top="left:20%;" style="float:left;">
+        <span>July 2011</span>
+        <p>
+          Rachel visits Denver for the first time, where she meets Paul’s family and friends, sees his old high school and site of his first tech-related job (Computer City!), and samples green chili and bison meat.
+        </p>
+      </div>
+      <div class="circular timeline5" data-bottom-top="left:100%;" data-center-top="left:25%;" style="float:left;"></div>
+
+      <div class="timeline-separator"></div>
+
+      <div class="circular timeline6" data-bottom-top="left:-100%;" data-center-top="left:35%;" style="float:left;"></div>
+      <div class="storybox" data-bottom-top="left:100%;" data-center-top="left:40%;" style="float:left;">
+        <span>September 2011</span>
+        <p>
+          Paul and Rachel move in together in Williamsburg, Brooklyn. Paul becomes the adoptive father of Rachel’s cat, Kit, aka, the Small Orange Baby. They celebrate with a hipster housewarming party.
+        </p>
+      </div>
+
+      <div class="timeline-separator"></div>
+
+      <div class="storybox story-left" data-bottom-top="left:-100%;" data-center-top="left:20%;" style="float:left;">
+        <span>May 2012</span>
+        <p>
+          Rachel takes Paul to Puerto Rico for his birthday. They take a terrifying single-prop, eight-seat flight to Culebra, where they see a sea turtle while snorkeling and meet <a href="http://green.blogs.nytimes.com/2012/08/13/defending-a-sanctuary-with-paint-and-song/" target="_">cool, mangrove-painting locals</a>.
+        </p>
+      </div>
+      <div class="circular timeline7" data-bottom-top="left:100%;" data-center-top="left:25%;" style="float:left;"></div>
+
+      <div class="timeline-separator"></div>
+
+      <div class="circular timeline8" data-bottom-top="left:-100%;" data-center-top="left:35%;" style="float:left;"></div>
+      <div class="storybox" data-bottom-top="left:100%;" data-center-top="left:40%;" style="float:left;">
+        <span>September 2012</span>
+        <p>
+          They venture to Asia for two weeks. Together, they <a href="http://www.scientificamerican.com/slideshow/komodo-dragons-rife-inequalities-between-the-sexes/" target="_">stalk Komodo dragons</a> and bathe out of a bucket in rural Indonesia. Rachel gets a large scar <a href="http://www.takepart.com/article/2012/12/12/mountain-bikers-hong-kong-offers-more-just-urban-jungles" target="_">mountain biking in Hong Kong</a>; Paul gets food poisoning at the airport in Malaysia.
+        </p>
+      </div>
+
+      <div class="timeline-separator"></div>
+
+      <div class="storybox story-left" data-bottom-top="left:-100%;" data-center-top="left:20%;" style="float:left;">
+        <span>January 2013</span>
+        <p>
+          Paul drags Rachel across the country for a three-month stint in San Francisco, where he takes part in a startup accelerator called Y Combinator. The Small Orange Baby comes along as Rachel’s psychiatrist-certified “comfort animal,” to get around their new apartment's no-pet regulations.
+        </p>
+      </div>
+      <div class="circular timeline9" data-bottom-top="left:100%;" data-center-top="left:25%;" style="float:left;"></div>
+
+      <div class="timeline-separator"></div>
+
+      <div class="circular timeline10" data-bottom-top="left:-100%;" data-center-top="left:35%;" style="float:left;"></div>
+      <div class="storybox" data-bottom-top="left:100%;" data-center-top="left:40%;" style="float:left;">
+        <span>July 2013</span>
+        <p>
+          On a two-week trip to Sweden and Norway, they explore a <a href="http://www.smithsonianmag.com/ist/?next=/travel/soviet-ghost-town-arctic-circle-pyramiden-stands-alone-180951429/" target="_">Soviet ghost town in Svalbard</a>, drink under the midnight sun and <a href="http://www.smithsonianmag.com/travel/deep-in-the-swedish-wilderness-discovering-one-of-the-worlds-greatest-restaurants-818172/" target="_">eat at one of the world’s best restaurants</a>. Scandinavia, they learn, is wildly expensive.
+        </p>
+      </div>
+
+      <div class="timeline-separator"></div>
+
+      <div class="storybox story-left" data-bottom-top="left:-100%;" data-center-top="left:20%;" style="float:left;">
+        <span>September 2013</span>
+        <p>
+          Paul takes Rachel to Bermuda “for her birthday.” He gets horribly seasick on a morning scuba diving excursion, and misses the second dive because his ears wouldn’t pop. Undeterred, that evening he proposes to Rachel on their hotel balcony at sunset, with champers! She says yes.
+        </p>
+      </div>
+      <div class="circular timeline11" data-bottom-top="left:100%;" data-center-top="left:25%;" style="float:left;"></div>
+
+      <div class="timeline-separator"></div>
+
+      <div class="circular timeline12" data-bottom-top="left:-100%;" data-center-top="left:35%;" style="float:left;"></div>
+      <div class="storybox" data-bottom-top="left:100%;" data-center-top="left:40%;" style="float:left;">
+        <span>March 2014</span>
+        <p>
+          They get a civil union so Rachel can piggyback on Paul’s health insurance policy. Romantic!
+        </p>
+      </div>
+
+      <div class="timeline-separator"></div>
+
+      <div class="storybox story-left" data-bottom-top="left:-100%;" data-center-top="left:20%;" style="float:left;">
+        <span>August 2014</span>
+        <p>
+          They ride two-humped camels together in the Gobi…
+        </p>
+      </div>
+      <div class="circular timeline13" data-bottom-top="left:100%;" data-center-top="left:25%;" style="float:left;"></div>
+
+      <div class="timeline-separator"></div>
+
+      <div class="circular timeline14" data-bottom-top="left:-100%;" data-center-top="left:35%;" style="float:left;"></div>
+      <div class="storybox" data-bottom-top="left:100%;" data-center-top="left:40%;" style="float:left;">
+        <span>September 2014</span>
+        <p>
+          They launch this website, and prepare to throw an amazing party for their family and friends!
+        </p>
+      </div>
+      <div class="timeline-separator"></div>
+    </div>
+    <div class="separator-30"></div>
+    <div class="container-fixed container-border"></div>
+  </div>
+  <div class="gap gap-50" style="background-image:url(images/main/beach.jpg);"></div>
+
+  <div id="wedding_party" class="content">
+    <div class="container container-fixed">
+      <h2>Wedding Party</h2>
+      <h3>Bride &amp; Groom</h3>
+      <div>
+        <div class="images" style="padding-left:105px;">
+          <div class="circular circular-big rachel selected" data-offset="0"></div>
+          <div class="circular circular-big paul" data-offset="1"></div>
+        </div>
+        <div class="image-descriptions">
+          <div class="image-container">
+            <div class="image-description">
+              <h4>Rachel</h4>
+              <p>
+                Rachel grew up exploring the bayous and beaches of her native Biloxi, Mississippi. Friends often referred to her house as “Noah’s Ark” because of the menagerie of animals found there - chickens, iguanas, hedgehogs, snakes… She and her sister could often be found under a derelict bridge, trapping feral kittens which they tamed and found homes for. 
+              </p>
+
+              <p>
+                Her love of all thing wild and green led her to study biology at Loyola University New Orleans. After graduating, she headed to Japan for a year to teach English, and then enrolled in an ecology master’s program in Europe. She spent time researching illegal wildlife trade in a peat swamp in Vietnam, where she ate a rat, got attacked by thousands of bees and was thrown off a motorbike. But mid-way through her degree she realized that statistics and data collection weren’t her favorite things, so she applied to NYU’s science journalism master’s program. Writing about science rather than doing science turned out to be a perfect fit - as was New York City. Now, she writes for places such as The New York Times, the BBC and Smithsonian. 
+              </p>
+
+              <p>
+                When not hunched over her desk rushing to meet a deadline, Rachel loves traveling (she’s been to 40 countries), cooking (she does it to spoil Paul) and taking photos (oftentimes of food, while traveling!).
+              </p>
+            </div>
+            <div class="image-description">
+              <h4>Paul</h4>
+              <p>
+              </p>
+              <p>
+              <p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-separator"></div>
+
+      <h3>Bridesmaids</h3>
+      <div>
+        <div class="images">
+          <div class="circular amelia selected" data-offset="0"></div>
+          <div class="circular ali" data-offset="1"></div>
+          <div class="circular jason" data-offset="2"></div>
+          <div class="circular amber" data-offset="3"></div>
+          <div class="circular tracey" data-offset="4"></div>
+        </div>
+        <div class="image-descriptions">
+          <div class="image-container">
+            <div class="image-description">
+              <h4>Amelia Joy Nuwer</h4>
+              <h5>Maid of Honor</h5>
+              <p>
+                As my older sister, Ra-Ra was always my role model when I was growing up. Whether she was making me believe there was a ghost living in our house, tricking me into thinking I could lay an egg or feeding me potentially poisonous flowers, my older sister was always the person I looked up to the most. 
+              </p>
+              <p>
+                Despite the trauma I endured as a child, Rachel and I have only grown closer as we have both gotten older. We have traveled the world together, riding camels in the Sahara, raving all night in Tokyo and taking a one-night trip to Croatia just to say we’ve been there. My big sister still remains my role model and I know her wedding day will be another great memory we will have together with friends and family.
+              </p>
+            </div>
+            <div class="image-description">
+              <h4>Ali Holder</h4>
+              <p>
+                I’m a native Texan and have called Austin, Texas, home for the last five years. I <a href="http://aliholder.com/site/">play music in Austin</a> and all around this great country. I also teach visual art at a museum in Austin when I’m not on the road.
+              </p> 
+              <p>
+                I met Rachel over a decade ago when we were studying abroad in Pontlevoy, France. Rachel and I were the two youngest students in attendance at L'Abbey. After many late nights of frolicing in the forest, we decided we would be friends for life. Throughout the last decade, we have spent time together in New Orleans and New York.
+              </p>
+            </div>
+            <div class="image-description">
+              <h4>Jason Lashbrook</h4>
+              <p>
+                Rachel and I have been friends for nearly 15 years. We met through our high school band, when I was her French horn section leader. After high school, our friendship continued to grow in college, especially as we planned a semester abroad in France. We spent three magical months there, spending every day together and traveling extensively throughout Europe. Those adventures (and misadventures) solidified a deep friendship.
+              </p>
+              <p>
+                Despite living on opposite sides of the country—or even the planet—throughout the years afterward, we have always managed to maintain our friendship, making an effort to talk regularly and see each other every year. I am honored to be included in her wedding ceremony, and I am looking forward to the coming decades of our friendship.
+              </p>
+            </div>
+            <div class="image-description">
+              <h4>Amber Williams</h4>
+              <p>
+                Rachel and I met the first day of grad school in 2010, but our friendship really began in a 
+                shared cubicle named Biedler Forest, where, as summer interns for Audubon Magazine, we 
+                complained about grad school. The struggles—long hours, high costs, rough critiques—are what brought us together. That cubicle is where I first heard about Paul, too, a super smart guy who shared her love of new experiences and, crucially, travel.
+              </p>
+              <p>
+                Since then, we have danced two New Year’s Eves away, dressed as incarcerated lesbian lovers, and wrapped our arms around R.L. Stine and James Watson - amongst many more times I’ll always remember. And happily, our friendship extends into work. Rachel is an exceptional science journalist and I’m grateful to have her as a writer at Scientific American. Now if only she’d stop trying to set me up with every guy she meets!
+              </p>
+            </div>
+            <div class="image-description">
+              <h4>Tracey Lee Williams</h4>
+              <p>
+                I met Rachel when she was 18 and I was 33, in a tiny village in France. We did not click right away—that happened months later at a Latin nightclub in Paris. Over the last 10 years, she has become one of my best friends and an amazing travel buddy. We have met up in Mississippi and Manhattan, too many times to count. I visited her in Kiso, Japan, where she taught for the JET Program, and we visited temples in Kyoto. Another year, we had a lovely Thanksgiving dinner of cheese fondue in Poitiers, France, before heading to Paris. And she once came to my rescue in The Middle of Nowhere, Slovenia. 
+              </p>
+              <p>
+                When I first got to know “RachelNuwer,” I told her I wanted to be her when I grew up—she was this incredible 18 year-old!  And, now, I feel the same—she’s still incredible, and I still want to be her when I grow up. I love her to pieces!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-separator"></div>
+      <h3>Groomsmen</h3>
+      <div>
+        <div class="images">
+          <div class="circular ty selected" data-offset="0"></div>
+          <div class="circular geej" data-offset="1"></div>
+          <div class="circular coulter" data-offset="2"></div>
+          <div class="circular rob" data-offset="3"></div>
+          <div class="circular dave" data-offset="4"></div>
+        </div>
+        <div class="image-descriptions">
+          <div class="image-container">
+            <div class="image-description">
+              <h4>Ty Parker</h4>
+              <h5>Best Man</h5>
+              <p>
+                Paul was throwing a party at his place in Denver many years ago, and I met him there through our mutual friend Dave. The only really distinct memory I have from that night was that, after asking what he did for a living, he not only told me what he did but also how good he was at it. Since that wasn't enough, apparently, he brought me to his computer and pulled up an e-mail from a client noting Paul's "god-like abilities." I kept thinking, "Why is this 13-year-old boy so full of himself?" But how wrong I was. He was much older.
+              </p>
+              <p>
+                Eventually, we wound up working at several jobs together over a few years, including a software startup and at an Air Force base in Colorado Springs. Things got even better when we moved to New York City within a few months of each other. We've had amazing times in New York and in travels to Brazilian beaches, Japanese temples, Mongolian gers and many spots in between.
+              </p>
+              <p>
+                I suppose there is one thing that is god-like about Paul after all: his friendship.
+              </p>
+            </div>
+            <div class="image-description">
+              <h4>Geoffrey Dix, Jr.</h4>
+              <h5>Brother of the Groom</h5>
+              <p>
+                Paul has always been like a brother to me.  It is a relationship that started with mutual dislike but eventually transitioned to mutual respect (at least I think its mutual).  The transition from being just an annoying older brother to a person that I respect might have begun on a camping trip near Creede, Colorado with several friends. 
+              </p>
+              <p>
+                It was while I was in college but from my memory of the end of the trip I was definitely of drinking age.  We went hiking and backpacking and were going to tackle a random 14er.  I had always considered myself the more athletic one of the two of us due to my participation in organized sports and conversely Paul's obsession with the video game Doom II (amongst others).  That's why it came as a great surprise to me that day after day he was in the front of the pack during our hikes while I was dragging in the back.  At the beginning I found it embarrassing but as the trip continued I felt nothing but pride and respect.  And since then the pride and respect has only increased.
+              <p>
+            </div>
+            <div class="image-description">
+              <h4>Lt. Coulter Reyes</h4>
+              <p>
+                In 1989, I was an impressionable young buck of a mere 10 years. The purpose of the Cherrelyn Elementary School visit to Flood Middle School was simple: match each 5th grader with a wise 6th grader who would guide their young protégé in the erudite path of 6th graderness. That is… unless you had the misfortune of being paired with Mr. Paul Dix. As my mentor, Paul ridiculed me for my selection of “pizza” as my favorite food and “red” as my favorite color. But no insult would sting as painfully as my ill-fated attempt at humor: Trying to demonstrate my savoir faire as a 6th grade candidate, I jested that my favorite band was “NKOTB.” There was a moment of startling silence, and then a twisted grimace slowly spread over Paul’s pre-pubescent maw. Chortling, he bellowed for all to hear: “THIS GUY LIKES NKOTB!!!” Needless to say, the resulting cacophony of adolescent laughter scarred me for life. To this day, I dare not utter a jest to try “to be cool.”
+              </p>
+              <p>
+                THANK YOU PAUL FOR RUINING MY CHILDHOOD! All jokes aside, you’ve been my best friend for decades and I owe it all to your disdain for the NKOTB (as I too loathed the NKOTB-laden airways of 1989). I HEART PAULIE!
+              </p>
+            </div>
+            <div class="image-description">
+              <h4>Robert Reyes</h4>
+              <p>
+                I met Paul back in the good old early nineties, around 7th grade. My brother and I were living in my Grandpa’s house over on S. Pearl and Yale in Denver. We started hanging out with a neighborhood boy, Geoff, who lived down the block. Well, as I’m sure you all know, Geoff’s big bro is the one and only Pauly! Skip forward a few years to high school, and guess who was in the high school band? None other than P himself! 
+              </p>
+              <p>
+                Thus began a friendship that ended up being lifelong. Our summers were filled with volleyball matches, long days on our skates and far more soda than any human alive should ever consume. After high school, we roommated together for years. This was an era fueled by Baz Luhrman, luaus at our house and (family, please ignore this last blurb), enough beer bottles in our recycling bin to rebuild the Taj Mahal. When I recollect on my youth, my fondest memories are, by far, those endless summers that we spent skating, roving the grounds of Elitch's amusement park and pulling all-nighters playing video games. Congratulations Paul! You deserve every ounce of happiness coming your way!
+              </p>
+            </div>
+            <div class="image-description">
+              <h4>Dave Lawrence</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-separator"></div>
+      <h3>Flower Girl</h3>
+      <div>
+        <div class="images">
+          <div class="circular xyla selected" data-offset="0"></div>
+        </div>
+        <div class="image-descriptions">
+          <div class="image-container">
+            <div class="image-description">
+              <h4>Xyla Dix</h4>
+              <p>
+                Xyla is Paul's niece.  He has been a fantastic uncle to her (though she does refer to the wedding as when her Aunt Rachel will be getting married).  She always enjoys receiving postcards from Uncle Paul and Aunt Rachel's exciting adventures.  Xyla also always laughs when she talks about the Orca Poop Uncle Paul and Aunt Rachel sent her while they were in San Diego.  In addition, Xyla enjoys playing with all the fun toys from Aunt Rachel's childhood that she has sent to Xyla.  One toy in particular that she likes and plays with a lot is a black rubber bat that was sent with one of the boxes.  It definitely seems that Aunt Rachel and Xyla both share a fascination of bugs and other generally creepy stuff.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="gap gap-100" style="background-image:url(images/main/duomo.jpg);"></div>
+
+  <div id="festivities" class="content">
+    <div class="container container-fixed">
+      <div class="heading">
+        <h2>Festivities</h2>
+      </div>
+
+      <div class="festivities-description">
+        <h3>Friday, April 10</h3>
+        <div class="circular-big selected nola-friday"></div>
+        <div class="festivities-text">
+          <p>
+            Coming Soon! There will be some sort of pre-party at a bar Friday night. And potentially a voodoo or swamp tour during the day. Check back soon for details!
+          </p>
+        </div>
+      </div>
+      <div class="container-separator"></div>
+
+      <div class="festivities-description">
+        <h3>Saturday, April 11</h3>
+        <div>
+          <div class="circular-big selected the-elms"></div>
+          <div class="festivities-text">
+            <h5>Ceremony, 7 pm</h5>
+            <h4>The Elms Mansion and Gardens</h4>
+            <p>
+              Drinks, dinner and dancing immediately to follow. 
+            </p>
+          </div>
+        </div>
+        <div style="clear:both;">
+          <div class="circular-big selected the-columns"></div>
+          <div class="festivities-text">
+            <h5>After-party, 11 pm</h5>
+            <h4>The Columns</h4>
+            <p>
+              Those still standing are invited to join us for a nightcap at The Columns, a ten minute
+               walk from the Elms.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="gap gap-50" style="background-image:url(images/main/hamptons.jpg);"></div>
+
+  <div id="details" class="content">
+    <div class="container-fixed container-border">
+      <div class="heading">
+        <h2>Details</h2>
+      </div>
+      <h3>Hotels</h3>
+      <p>
+        Our wedding falls on the weekend of the French Quarter Festival. The good news is that there will be hundreds of free live music shows! The bad news is that hotels are more expensive and less available. Many of the hotels we found have early expirations for the block rate and also could only guarantee holding a few rooms. So make your reservations well in advance to save yourself some money and ensure you have a place to lay your weary head after consuming copious hurricanes and sazeracs!   
+      </p>
+      <p>
+        To access the block rates quoted here, mention the "Nuwer-Dix Wedding" when calling the hotels.
+      </p>
+    </div>
+    <div class="container-big">
+      <div class="wrapper">
+        <iframe src="https://mapsengine.google.com/map/embed?mid=zBqQFn71OnUg.kurDqREv9W9A" width="100%" height="400"></iframe>
+      </div>
+    </div>
+    <div class="container-fixed">
+      <h4>Hotels List</h4>
+<h5><a href="http://neworleanshamptoninns.com/hampton-hotels/garden-district/" target="_">Hampton Inn Garden District</a></h5>
+<table>
+  <tr>
+    <th>Info</th>
+    <td>A seven minute walk to the wedding venue, also conveniently located next to a street car stop for those not renting a car. Includes breakfast.</td>
+  </tr>
+  <tr>
+    <th>Rate</th>
+    <td>$209 for a double or a king</td>
+  </tr>
+  <tr>
+    <th>Room blook expires</th>
+    <td>March 10</td>
+  </tr>
+  <tr>
+    <th>Minimum stay</th>
+    <td>Two nights</td>
+  </tr>
+  <tr>
+    <th>Advance payment requirements</th>
+    <td>72 hours prior to arrival</td>
+  </tr>
+  <tr>
+    <th>How to book</th>
+    <td>call 504-899-9990, hotel code NIW. Or online.</td>
+  </tr>
+</table>
+
+<h5><a href="http://www.qandc.com/" target="_">Queen and Crescent Hotel</a></h5>
+<table>
+  <tr>
+    <th>Info</th>
+    <td>Newly renovated. Of all the hotels we've blocked, this one is closest to the French Quarter. I've stayed here several times myself. An eight minute drive to the wedding venue.</td>
+  </tr>
+  <tr>
+    <th>Rate</th>
+    <td>$279 for a single or double </td>
+  </tr>
+  <tr>
+    <th>Room blook expires</th>
+    <td>March 9</td>
+  </tr>
+  <tr>
+    <th>Minimum stay</th>
+    <td>Two nights</td>
+  </tr>
+  <tr>
+    <th>Advance payment requirements</th>
+    <td>First night charged on booking, remaining nights charged in full on March 10.</td>
+  </tr>
+  <tr>
+    <th>How to book</th>
+    <td>call 866-247-7936</td>
+  </tr>
+</table>
+
+<h5><a href="http://www.clarionhotel.com/hotel-new_orleans-louisiana-LA087" target="_">Clarion Hotel Grand Boutique </a></h5>
+<table>
+  <tr>
+    <th>Info</th>
+    <td>A 14 minute walk or four minute drive from the wedding venue. Located next to a street car stop. Comes with breakfast.</td>
+  </tr>
+  <tr>
+    <th>Rate</th>
+    <td>$175.99 for a double or king </td>
+  </tr>
+  <tr>
+    <th>Room blook expires</th>
+    <td>February 24</td>
+  </tr>
+  <tr>
+    <th>Minimum stay</th>
+    <td>2 nights</td>
+  </tr>
+  <tr>
+    <th>Advance payment requirements</th>
+    <td>Pay on departure</td>
+  </tr>
+  <tr>
+    <th>How to book</th>
+    <td>call 504-524-3333</td>
+  </tr>
+</table>
+
+<h5><a href="http://www.fairchildhouse.com/" target="_">Fairchild House</a></h5>
+<table>
+  <tr>
+    <th>Info</th>
+    <td>Funky little family-owned B&amp;B, a bit worn around the edges but good value. They'll probably knock $10-15 off the price if you ask to opt out of the breakfast (it's nothing to write home about). Some private off-street parking, and plenty of spaces around the block. Four min drive to the wedding venue, or 20 minute walk.</td>
+  </tr>
+  <tr>
+    <th>Rate</th>
+    <td>$99 - 199 (just 13 rooms available in the whole hotel)</td>
+  </tr>
+  <tr>
+    <th>Room blook expires</th>
+    <td>September 30</td>
+  </tr>
+  <tr>
+    <th>Minimum stay</th>
+    <td>3 nights</td>
+  </tr>
+  <tr>
+    <th>Advance payment requirements</th>
+    <td>First night paid on booking</td>
+  </tr>
+  <tr>
+    <th>How to book</th>
+    <td>Call 504-524-0154, or email Beatriz at info@fairchildhouse.com</td>
+  </tr>
+</table>
+
+<h5><a href="http://www.qualityinn.com/hotel-new_orleans-louisiana-LA032%20" target="_">Quality Inn &amp; Suites Maison St. Charles</a></h5>
+<table>
+  <tr>
+    <th>Info</th>
+    <td>Comes with breakfast, outdoor pool and jacuzzi, 22 min walk from the wedding venue or six min drive.</td>
+  </tr>
+  <tr>
+    <th>Rate</th>
+    <td>$239 for a king, $249 for a double queen</td>
+  </tr>
+  <tr>
+    <th>Room blook expires</th>
+    <td>February 11</td>
+  </tr>
+  <tr>
+    <th>Minimum stay</th>
+    <td>2 nights</td>
+  </tr>
+  <tr>
+    <th>Advance payment requirements</th>
+    <td>Pay when you check out</td>
+  </tr>
+  <tr>
+    <th>How to book</th>
+    <td>call 504-522-0187</td>
+  </tr>
+</table>
+
+<h5><a href="http://www.thepontchartrainhotel.com/" target="_">The Pontchartrain</a></h5>
+<table>
+  <tr>
+    <th>Info</th>
+    <td>Rooms include kitchenettes. Three min drive to the wedding venue, or 13 min walk.</td>
+  </tr>
+  <tr>
+    <th>Rate</th>
+    <td>$249 for a studio bedroom, $269 for a one bedroom suite</td>
+  </tr>
+  <tr>
+    <th>Room blook expires</th>
+    <td>February 11</td>
+  </tr>
+  <tr>
+    <th>Minimum stay</th>
+    <td>2 nights</td>
+  </tr>
+  <tr>
+    <th>Advance payment requirements</th>
+    <td>Charged when you check out</td>
+  </tr>
+  <tr>
+    <th>How to book</th>
+    <td>call 504-524-0581</td>
+  </tr>
+</table>
+
+    </div>
+    <div class="container-fixed container-border"></div>
+  </div>
+  <div class="gap gap-50" style="background-image:url(images/main/indonesia.jpg);"></div>
+
+  <div id="nola" class="content">
+    <div class="container container-big">
+      <div class="wrapper">
+        <h2>NOLA</h2>
+        <iframe src="https://mapsengine.google.com/map/embed?mid=zBqQFn71OnUg.kQNHV4RQn-Ds" width="100%" height="600"></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="gap gap-100" style="background-image:url(images/main/norway.jpg);"></div>
 </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-54087027-1', 'auto');
+      ga('send', 'pageview');
+    </script>
   </body>
 </html>
