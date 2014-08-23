@@ -405,6 +405,22 @@ h2, h3, h4, h5 {
   padding-bottom: 10px;
 }
 
+#details .faq h4 {
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+#details .faq p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.container-fixed h3, h4 {
+  margin: 0px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
 .container-fixed-small {
   width: 500px;
 }
