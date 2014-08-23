@@ -15,5 +15,6 @@ $(window).load(function() {
     $("ul.tabrow li").removeClass("selected");
     $(this).addClass("selected");
   });
+  $("#loading_cover").fadeOut(800);
   console.log("DONE!");
 });
