@@ -411,6 +411,8 @@ h2, h3, h4, h5 {
 }
 
 .festivities-text p {
+  font-size: 1.3em;
+  line-height: 1.4em;
   margin-top: 20px;
 }
 
@@ -597,3 +599,53 @@ table {
   .content-full {
     height:100%;
   }
+
+#loading_cover {
+  position:fixed;
+  top: -200px;
+    padding:0;
+    margin:0;
+  height: 200%;
+  width: 200%;
+  z-index: 10000;
+
+/* IE10 Consumer Preview */ 
+background-image: -ms-radial-gradient(center bottom, circle farthest-side, #FFFFFF 0%, #160056 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-radial-gradient(center bottom, circle farthest-side, #FFFFFF 0%, #160056 100%);
+
+/* Opera */ 
+background-image: -o-radial-gradient(center bottom, circle farthest-side, #FFFFFF 0%, #160056 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(radial, center bottom, 0, center bottom, 477, color-stop(0, #FFFFFF), color-stop(1, #160056));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-radial-gradient(center bottom, circle farthest-side, #FFFFFF 0%, #160056 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: radial-gradient(circle farthest-side at center bottom, #FFFFFF 0%, #160056 100%);
+
+    animation: spin 5s linear infinite;
+    -moz-animation: spin 5s linear infinite;
+    -webkit-animation: spin 5s linear infinite;
+    -ms-animation: spin 5s linear infinite;
+  }
+
+@keyframes spin {
+    from { transform: scale3d(2,2,1) rotateZ(0deg);  }
+    to { transform: scale3d(2,2,1) rotateZ(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: scale3d(2,2,1) rotateZ(0deg); }
+    to { -moz-transform: scale3d(2,2,1) rotateZ(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: scale3d(2,2,1) rotateZ(0deg); }
+    to { -webkit-transform: scale3d(2,2,1) rotateZ(360deg); }
+}
+@-ms-keyframes spin {
+    from { -ms-transform: scale3d(2,2,1) rotateZ(0deg); }
+    to { -ms-transform: scale3d(2,2,1) rotateZ(360deg); }
+}
