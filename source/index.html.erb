@@ -2,7 +2,16 @@
 title: Rachel and Paul 4 eva
 ---
 
-<div id="loading_title"><h1>RACHEL &amp; PAUL</h1></div>
+<div id="loading_title">
+  <h1>RACHEL &amp; PAUL</h1>
+  <p>loading<span id="indicator"></span></p>
+</div>
+<script>
+el = document.getElementById("indicator");
+window.loadingIndicator = setInterval(function () {
+  el.textContent += ".";
+}, 1000);
+</script>
 <div id="loading_cover"></div>
 <div id="header">
   <img class="left" src="images/rn_webheader_left.jpg" height="65px" style="margin-right:-30px" />
