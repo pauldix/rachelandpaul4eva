@@ -600,6 +600,26 @@ table {
     height:100%;
   }
 
+#loading_title {
+  position: fixed;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #006729;
+  z-index: 2000;
+}
+
+#loading_title h1 {
+  text-shadow: black 0.1em 0.1em 0.2em
+}
+
+/*#loading_title h1 {
+  margin-top: auto;
+  margin-bottom: auto;  
+}
+*/
 #loading_cover {
   position:fixed;
   top: -200px;
@@ -607,7 +627,7 @@ table {
     margin:0;
   height: 200%;
   width: 200%;
-  z-index: 10000;
+  z-index: 1000;
 
 /* IE10 Consumer Preview */ 
 background-image: -ms-radial-gradient(center bottom, circle farthest-side, #FFFFFF 0%, #160056 100%);
@@ -627,10 +647,10 @@ background-image: -webkit-radial-gradient(center bottom, circle farthest-side, #
 /* W3C Markup, IE10 Release Preview */ 
 background-image: radial-gradient(circle farthest-side at center bottom, #FFFFFF 0%, #160056 100%);
 
-    animation: spin 5s linear infinite;
-    -moz-animation: spin 5s linear infinite;
-    -webkit-animation: spin 5s linear infinite;
-    -ms-animation: spin 5s linear infinite;
+    animation: spin 5s ease infinite;
+    -moz-animation: spin 5s ease infinite;
+    -webkit-animation: spin 5s ease infinite;
+    -ms-animation: spin 5s ease infinite;
   }
 
 @keyframes spin {
@@ -649,3 +669,4 @@ background-image: radial-gradient(circle farthest-side at center bottom, #FFFFFF
     from { -ms-transform: scale3d(2,2,1) rotateZ(0deg); }
     to { -ms-transform: scale3d(2,2,1) rotateZ(360deg); }
 }
+
