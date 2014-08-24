@@ -1,0 +1,255 @@
+
+<%
+@culture = [
+  {
+    "link" => "http://www.oakalleyplantation.com/",
+    "title" => "Oak Alley Plantation",
+    "text" => "A beautiful antebellum mansion on the edge of the Mississippi River. Costumed guides provide tours, and guests can spend the night.",
+    "location" => "Vacherie, Louisiana"
+  },
+  {
+    "link" => "http://www.lauraplantation.com/",
+    "title" => "Laura Plantation",
+    "text" => "Beautiful plantation formerly owned by a Creole woman.",
+    "location" => "Vacherie, Louisiana"
+  },
+  {
+    "link" => "http://www.sanfranciscoplantation.org/",
+    "title" => "San Francisco Plantation",
+    "text" => "Plantation with interesting architecture, and a designated National Historic Landmark.",
+    "location" => "Garyville, Louisiana"
+  },
+  {
+    "link" => "http://www.lafayettetravel.com/",
+    "title" => "Lafayette",
+    "text" => "Louisiana's fourth largest city, and the center of French-speaking Cajun culture. A charming place to visit, and there is an Acadian Culture Center in town.",
+    "location" => "Lafayette, Louisiana "
+  },
+  {
+    "link" => "http://www.crt.state.la.us/louisiana-state-parks/historic-sites/port-hudson-state-historic-site/index",
+    "title" => "Port Hudson State Historic Site",
+    "text" => "Civil War battlefield with a 6-mile hiking trail.",
+    "location" => "Jackson, Louisiana "
+  },
+  {
+    "link" => "http://www.forestheritagemuseum.org/",
+    "title" => "Southern Forest Heritage Museum",
+    "text" => "The oldest sawmill in the South.",
+    "location" => "Long Leaf, Louisiana"
+  },
+  {
+    "link" => "http://www.rosemontplantation1810.com/",
+    "title" => "Rosemont Plantation",
+    "text" => "Jefferson Davis' boyhood home.",
+    "location" => "Woodville, Mississippi"
+  },
+  {
+    "link" => "http://visitnatchez.org/",
+    "title" => "Natchez",
+    "text" => "A historic Mississippi town, and one of the oldest in the South. Sites include the Grand Village of the Natchez Indians; William Johnson's house (known as \"the Barber of Natchez\"); Historic Stanton Hall (their Carriage House restaurant serves delicious fried chicken and tomato aspic); the Institute of Southern Jewish Life; Longwood mansion; and Rosalie Mansion and Gardens. Also terminus of historic Natchez Trace parkway.",
+    "location" => "Natchez, Mississippi"
+  },
+  {
+    "link" => "http://www.visitinfinity.com/",
+    "title" => "NASA Infinity Space Center",
+    "text" => "Visitor's center and museum for the Stennis Space Center.",
+    "location" => "Hancock County, Mississippi"
+  },
+  {
+    "link" => "http://www.baystlouisoldtown.com/",
+    "title" => "Bay St. Louis",
+    "text" => "Cute historic Gulf town that was destroyed by Katrina. Cafes and shops have since reopened, and there's a quiet beach.",
+    "location" => "Bay St. Louis, Mississippi"
+  },
+  {
+    "link" => "http://georgeohr.org/",
+    "title" => "Ohr O’Keefe Museum of Art",
+    "text" => "See the work of \"the mad potter of Biloxi.\"",
+    "location" => "Biloxi, Mississippi"
+  },
+  {
+    "link" => "http://www.maritimemuseum.org/",
+    "title" => "Maritime and Seafood Industry Museum",
+    "text" => "Learn about the Gulf Coast's historic seafood industry. This museum was washed away by Katrina but recently reopened.",
+    "location" => "Biloxi, Mississippi"
+  },
+  {
+    "link" => "http://www.beauvoir.org/",
+    "title" => "Beauvoir",
+    "text" => "Jefferson Davis' final home, with a museum and historic cemetery on site.",
+    "location" => "Biloxi, Mississippi"
+  },
+  {
+    "link" => "http://www.biloxishrimpingtrip.com/ordereze/default.aspx",
+    "title" => "Shrimp boat ride",
+    "text" => "Climb aboard a shrimping boat for a hands-on demonstration and boat ride.",
+    "location" => "Biloxi, Mississippi"
+  },
+  {
+    "link" => "https://www.maritimemuseum.org/w/?page_id=136",
+    "title" => "Schooner ride",
+    "text" => "Take a ride on the historic Biloxi Schooner.",
+    "location" => "Biloxi, Mississippi"
+  },
+  {
+    "link" => "http://www.oceansprings-ms.com/",
+    "title" => "Ocean Springs",
+    "text" => "Cute shops, cafes, bars, restaurants.",
+    "location" => "Ocean Springs, Mississippi"
+  },
+  {
+    "link" => "http://www.walterandersonmuseum.org/",
+    "title" => "Walter Anderson Museum of Art",
+    "text" => "See works of \"an American master,\" who depicted
+    nature in striking, abstract watercolors.",
+    "location" => "Ocean Springs, Mississippi"
+  }
+]
+
+@eating = [
+  {
+    "link" => "http://abita.com/visit_abita/tasting_room",
+    "title" => "Abita Brewing Company",
+    "text" => "Visit Abita beer brewery for a tour or tasting.",
+    "location" => "Covington, Louisiana"
+  },
+  {
+    "link" => "http://www.tabasco.com/avery-island/visitor-information/",
+    "title" => "Tabasco Sauce Factory",
+    "text" => "Take a tour of the Tabasco Sauce factory, which also includes a 170-acre nature area you can explore.",
+    "location" => "Avery Island, Louisiana"
+  },
+  {
+    "link" => "http://dpbanhmi.com/DP_Bakery/About_Us.html",
+    "title" => "Dong Phuong",
+    "text" => "Excellent Vietnamese restaurant and bakery in the heart of \"Little Saigon,\" where many of New Orleans' Vietnamese residents live. Buddhist temples, grocery stores and karaoke parlors abound nearby. Also one of the areas obliterated by Katrina; damage is still readily apparent.",
+    "location" => "New Orleans East"
+  },
+  {
+    "link" => "http://www.yelp.com/biz/daiquiris-now-slidell",
+    "title" => "Daiquiris Now",
+    "text" => "Drive-through daiquiri shop. Comes in gallons.",
+    "location" => "Slidell, Louisiana"
+  },
+  {
+    "link" => "http://www.gulfcoast.org/casinos/",
+    "title" => "Casinos",
+    "text" => "The Mississippi Gulf Coast is the eighth largest casino hub in the US. Some good options include the Beau Rivage, the Hard Rock and the Imperial Palace.",
+    "location" => "Gulfport and Biloxi, Mississippi"
+  },
+  {
+    "link" => "theshedbbq.com",
+    "title" => "The Shed Barbeque and Blues Joint",
+    "text" => "Excellent bbq and live music.",
+    "location" => "Ocean Springs, Mississippi"
+  },
+  {
+    "link" => "http://www.pho.com/d'iberville-ms/what-the-pho",
+    "title" => "What the Pho",
+    "text" => "Best Vietnamese food on the Gulf Coast.",
+    "location" => "D’Iberville, Mississippi"
+  },
+  {
+    "link" => "http://www.urbanspoon.com/r/159/951711/restaurant/Gulfport/Shaws-Fish-House-Perkinston",
+    "title" => "Shaw’s Fish House",
+    "text" => "Best fried catfish and hush puppies in the South.",
+    "location" => "Perkinston, Mississippi"
+  }
+]
+
+@nature = [
+  {
+    "link" => "http://www.honeyislandswamp.com/",
+    "title" => "Honey Island Swamp",
+    "text" => "Gorgeous cypress swamp, with fantastic tours. (Pickup available in the city.)",
+    "location" => "Slidell, Louisiana"
+  },
+  {
+    "link" => "http://www.nps.gov/jela/barataria-preserve.htm",
+    "title" => "Jean Lafitte Swamp",
+    "text" => "Boardwalk and trails meander through this nature reserve.",
+    "location" => "Marrero, Louisiana"
+  },
+  {
+    "link" => "http://www.insta-gatorranch.com/index.asp",
+    "title" => "Insta-Gator Ranch and Hatchery",
+    "text" => "Alligator farm. Kids (or adults!) can play with baby gators, and there are educational tours.",
+    "location" => "Marrero, Louisiana"
+  },
+  {
+    "link" => "http://www.globalwildlife.com/",
+    "title" => "Global Wildlife Center",
+    "text" => "Feed and pet wildebeest, zebra, giraffes and more on a safari ride. Great for the kiddies.",
+    "location" => "Folsom, Louisiana"
+  },
+  {
+    "link" => "http://www.tripadvisor.com/Attraction_Review-g40050-d264853-Reviews-Lake_Martin-Breaux_Bridge_Louisiana.html",
+    "title" => "Lake Martin",
+    "text" => "Swampy lake and birding paradise. \"Pack and Paddle\" in Lafayette can arrange paddle excursions.",
+    "location" => "Lake Martin, Louisiana"
+  },
+  {
+    "link" => "http://www.liuzzaland.com/",
+    "title" => "Liuzza Produce Farm",
+    "text" => "Strawberry picking & petting zoo. Good for kids.",
+    "location" => "Amite, Louisiana"
+  },
+  {
+    "link" => "http://www.msshipisland.com/",
+    "title" => "Ship Island",
+    "text" => "Barrier island along the Mississippi Gulf Coast. See dolphins, horseshoe crabs and other wildlife. There's a Civil War fort on the island that's open to the public. Umbrella and chair rentals are available. Boats run daily.",
+    "location" => "Gulfport, Mississippi"
+  },
+  {
+    "link" => "http://pascagoulariver.audubon.org/mccoys-swamp-and-river-tours",
+    "title" => "Pascagoula River",
+    "text" => "Take a boat tour of the Pascagoula River - the only continuously free-flowing, non-altered river in the US - and McCoy's Swamp, arranged by the Pascagoula Audubon Center.",
+    "location" => "Pascagoula, Mississippi"
+  },
+  {
+    "link" => "http://www.mdwfp.com/parks-destinations/ms-state-parks/clark-creek.aspx",
+    "title" => "Clark Creek Natural Area",
+    "text" => "Hike to Mississippi's only waterfall.",
+    "location" => "Woodville, Mississippi"
+  },
+  {
+    "link" => "http://www.gulfshores.com/",
+    "title" => "Gulf Shores",
+    "text" => "Beautiful beaches without much development; plenty of nature and deserted stretches of sand and dunes. There's a fort here, too.",
+    "location" => "Gulf Shores, Alabama"
+  }
+]
+%>
+
+<h4>Culture &amp; History</h4>
+<table>
+  <% @culture.each do |entry| %>
+  <tr>
+    <td><%= link_to entry["title"], entry["link"] %></td>
+    <td><%= entry["text"] %></td>
+    <td><%= entry["location"] %></td>
+  </tr>
+  <% end %>
+</table>
+
+<h4>Eating &amp; Entertainment</h4>
+<table>
+  <% @eating.each do |entry| %>
+  <tr>
+    <td><%= link_to entry["title"], entry["link"] %></td>
+    <td><%= entry["text"] %></td>
+    <td><%= entry["location"] %></td>
+  </tr>
+  <% end %>
+</table>
+
+<h4>Nature</h4>
+<table>
+  <% @nature.each do |entry| %>
+  <tr>
+    <td><%= link_to entry["title"], entry["link"] %></td>
+    <td><%= entry["text"] %></td>
+    <td><%= entry["location"] %></td>
+  </tr>
+  <% end %>
+</table>
