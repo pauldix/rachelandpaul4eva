@@ -377,6 +377,7 @@ h2, h3, h4, h5 {
 }
 
 #our_story {
+  overflow: hidden;
   width: 100%;
 }
 
