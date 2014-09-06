@@ -21,16 +21,12 @@ body {
 #header {
   text-align: center;
   height: 70px;
-  min-width: 1111px;
+  min-width: 1120px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
   background: white;
-}
-
-#nola p {
-  margin-top: 10px;
 }
 
 #nola li {
@@ -116,12 +112,8 @@ h2, h3, h4, h5 {
   text-transform: uppercase;
 }
 
-#wedding_party h2, h3, h4, h5 {
+#wedding_party h3, h4, h5 {
   margin: 15px;
-}
-
-#wedding_party h2 {
-  margin-bottom: 25px;
 }
 
 #wedding_party p {
@@ -141,12 +133,8 @@ h2, h3, h4, h5 {
   margin-top: 0px;
 }
 
-#wedding_party h2 {
-  font-size: 2em;
-}
-
 #wedding_party h3 {
-  font-size: 1.7em;
+  font-size: 1.6em;
 }
 
 #wedding_party h4 {
@@ -457,7 +445,27 @@ h2, h3, h4, h5 {
   text-align: left;
 }
 
-.container:before, .container:after, .container-border:before {
+.content-heading {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-heading img {
+  display: inline;
+  margin-bottom: -10px;
+  height: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content-heading h2 {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+}
+
+.container-border:before {
     content: "";
     height: 3px;
     background: -moz-linear-gradient(left,  rgba(0,67,29,0) 0%, rgba(0,67,29,1) 50%, rgba(0,67,29,0) 100%);
@@ -468,6 +476,8 @@ h2, h3, h4, h5 {
     background: linear-gradient(to right,  rgba(0,67,29,0) 0%,rgba(0,67,29,1) 50%,rgba(0,67,29,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 );
     display: block;
+    clear: both;
+    margin-bottom:20px;
 }
 
 .container-separator {
@@ -706,7 +716,7 @@ background-image: radial-gradient(circle farthest-side at center bottom, #FFFFFF
 }
 
 #nola p {
-  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #nola h3 {
