@@ -34,8 +34,8 @@ $(window).load(function() {
   $("#loading_title p").hide();
   clearInterval(window.loadingIndicator);
   $("html, body").scrollTop(0);
-  $("#loading_title, #foo, .pace").fadeOut(1600);
-  $("#loading_cover").fadeOut(800, function() {
+  $("#loading_title").fadeOut(1600);
+  $("#foo, #progress").fadeOut(800, function() {
     var elId = window.location.hash;
     if (elId) {
             var top = $(elId).position().top - 40;
