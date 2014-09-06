@@ -1,5 +1,13 @@
 //= require_tree .
+
+
 $(window).load(function() {
+$(".content-heading h2").each(function(i, el) {
+  var e = $(el);
+  e.parent().width(e.width() + 124);
+  console.log("****", e.width());
+});
+
   var s = skrollr.init();
 
   $(".images .circular").on("click", function(ev) {
