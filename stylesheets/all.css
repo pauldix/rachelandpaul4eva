@@ -665,6 +665,16 @@ table {
   margin-bottom: auto;  
 }
 */
+
+#foo {
+  position:fixed;
+  padding:0;
+  margin:0;
+  height: 200%;
+  width: 200%;
+  z-index: 1000;
+  background: white;  
+}
 #loading_cover {
   position:fixed;
   top: -200px;
@@ -722,3 +732,4 @@ background-image: radial-gradient(circle farthest-side at center bottom, #FFFFFF
 #nola h3 {
   margin-top: 30px;
 }
+
