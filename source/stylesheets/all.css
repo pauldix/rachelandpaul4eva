@@ -733,6 +733,6 @@ background-image: radial-gradient(circle farthest-side at center bottom, #FFFFFF
   margin-top: 30px;
 }
 
-#nola > ul {
-  margin-bottom: 20px;
+#nola ul {
+  margin-bottom: 25px;
 }
