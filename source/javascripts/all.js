@@ -2,11 +2,10 @@
 
 
 $(window).load(function() {
-$(".content-heading h2").each(function(i, el) {
-  var e = $(el);
-  e.parent().width(e.width() + 124);
-  console.log("****", e.width());
-});
+  $(".content-heading h2").each(function(i, el) {
+    var e = $(el);
+    e.parent().width(e.width() + 124);
+  });
 
   var s = skrollr.init();
 
@@ -15,7 +14,6 @@ $(".content-heading h2").each(function(i, el) {
     $(ev.target).addClass("selected");
     var offset = $(ev.target).attr("data-offset") * 500 * -1;
     $(ev.target).parent().next().children().animate({"margin-left": offset});
-    console.log("CLICK");
   });
 
   $("a").click(function(ev) {
@@ -36,7 +34,7 @@ $(".content-heading h2").each(function(i, el) {
   $("#loading_title p").hide();
   clearInterval(window.loadingIndicator);
   $("html, body").scrollTop(0);
-  $("#loading_title").fadeOut(1600);
+  $("#loading_title, #foo, .pace").fadeOut(1600);
   $("#loading_cover").fadeOut(800, function() {
     var elId = window.location.hash;
     if (elId) {
