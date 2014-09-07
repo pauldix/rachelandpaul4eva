@@ -55,7 +55,6 @@ var step = 3;
 var currentProgress = 0;
 var stepTime = 100;
 window.loadingIndicator = setInterval(function () {
-  console.log("foo")
   var increment = progressLeft / step;
   currentProgress = currentProgress + increment;
   progressLeft = progressLeft - increment;
