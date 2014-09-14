@@ -29,7 +29,7 @@ body {
   background: white;
 }
 
-#nola li {
+#nola_c li {
   margin-left: 15px;
   margin-top: 10px;
 }
@@ -65,7 +65,6 @@ body {
 }
 
 .title a:hover {
-  color: #006729;
   text-decoration: underline;
 }
 
@@ -82,7 +81,6 @@ body {
 }
 
 #header h2 a:hover {
-  color: #560053;
   text-decoration: underline;
 }
 
@@ -725,14 +723,54 @@ background-image: radial-gradient(circle farthest-side at center bottom, #FFFFFF
     to { -ms-transform: scale3d(2,2,1) rotateZ(360deg); }
 }
 
-#nola p {
+#nola_c p {
   padding-bottom: 20px;
 }
 
-#nola h3 {
+#nola_c h3 {
   margin-top: 30px;
 }
 
-#nola ul {
+#nola_c ul {
   margin-bottom: 25px;
 }
+
+.nav-sub {
+  background: white;
+  position: absolute;
+  text-align: left;
+  display: none;
+/*  top: 55px;
+  left: 440px;
+  width: 154px;
+*/  list-style-type: none;
+/*  border-bottom: solid #006729 1px;
+  border-left: solid #006729 1px;
+  border-right: solid #006729 1px;
+  border-bottom-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-bottom-right-radius: 10px;
+*/}
+
+.nav-sub li a {
+  text-decoration: none;
+}
+
+.nav-sub li {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding: 3px;
+}
+
+.nav-sub li a {
+  margin-left: 10px;
+}
+
+.nav-sub li:hover {
+  background-color: rgba(128, 48, 221, 0.19999999999999996);
+}
+
+.nav

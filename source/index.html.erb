@@ -6,7 +6,7 @@ title: Rachel and Paul 4 eva
   <img class="left" src="images/rn_webheader_left.jpg" height="65px" style="margin-right:-30px" />
   <div class="nav">
     <h2><a href="#our_story">OUR STORY</a></h2>
-    <h2><a href="#wedding_party">WEDDING PARTY</a></h2>
+    <h2><a href="#wedding_party" data-nav="wedding_party">WEDDING PARTY</a></h2>
   </div>
   <div class="title">
     <img class="left" src="images/rn_webheader_left_alligator.jpg" height="50px" />
@@ -15,11 +15,38 @@ title: Rachel and Paul 4 eva
   </div>
   <img class="right" src="images/rn_webheader_right.jpg" height="65px" />
   <div class="nav">
-    <h2><a href="#festivities">FESTIVITIES</a></h2>
-    <h2><a href="#details">DETAILS</a></h2>
-    <h2><a href="#nola">NOLA</a></h2>
+    <h2><a href="#festivities" data-nav="festivities">FESTIVITIES</a></h2>
+    <h2><a href="#details" data-nav="details">DETAILS</a></h2>
+    <h2><a href="#nola" data-nav="nola">NOLA</a></h2>
   </div>
   <div class="separator"></div>
+
+  <ul class="nav-sub wedding_party">
+    <li><a href="#bride_and_groom">Bride &amp; Groom</a></li>
+    <li><a href="#bridesmaids">Bridesmaids</a></li>
+    <li><a href="#groomsmen">Groomsmen</a></li>
+    <li><a href="#flowezr_girl">Flower girl</a></li>
+  </ul>
+
+  <ul class="nav-sub details">
+    <li><a href="#hotels">Hotels</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#registry">Registry</a></li>
+  </ul>
+
+  <ul class="nav-sub details">
+    <li><a href="#hotels">Hotels</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#registry">Registry</a></li>
+  </ul>
+
+  <ul class="nav-sub nola">
+    <li><a href="#tours_and_classes">Tours &amp; Classes</a></li>
+    <li><a href="#eating">Eating</a></li>
+    <li><a href="#drinking">Drinking</a></li>
+    <li><a href="#sights">Sights</a></li>
+    <li><a href="#explore_the_south">Explore the South</a></li>
+  </ul>
 </div>
 
   <div
@@ -100,14 +127,14 @@ title: Rachel and Paul 4 eva
 
   <div
     class="parallax-image-wrapper parallax-image-wrapper-100"
-    data-anchor-target="#nola + .gap"
+    data-anchor-target="#nola_c + .gap"
     data-bottom-top="transform:translate3d(0px, 200%, 0px)"
     data-top-bottom="transform:translate3d(0px, 0%, 0px)">
 
     <div
       class="parallax-image parallax-image-100"
       style="background-image:url(images/main/norway.jpg)"
-      data-anchor-target="#nola + .gap"
+      data-anchor-target="#nola_c + .gap"
       data-bottom-top="transform: translate3d(0px, -50%, 0px);"
       data-top-bottom="transform: translate3d(0px, 50%, 0px);"
     ></div>
@@ -289,7 +316,7 @@ title: Rachel and Paul 4 eva
         <div class="container-fixed container-border"></div>
       </div>
 
-      <h3>Bride &amp; Groom</h3>
+      <h3 id="bride_and_groom">Bride &amp; Groom</h3>
       <div>
         <div class="images" style="padding-left:105px;">
           <div class="circular circular-big rachel selected" data-offset="0"></div>
@@ -328,7 +355,7 @@ title: Rachel and Paul 4 eva
       </div>
       <div class="container-separator"></div>
 
-      <h3>Bridesmaids</h3>
+      <h3 id="bridesmaids">Bridesmaids</h3>
       <div>
         <div class="images">
           <div class="circular amelia selected" data-offset="0"></div>
@@ -388,7 +415,7 @@ title: Rachel and Paul 4 eva
         </div>
       </div>
       <div class="container-separator"></div>
-      <h3>Groomsmen</h3>
+      <h3 id="groomsmen">Groomsmen</h3>
       <div>
         <div class="images">
           <div class="circular ty selected" data-offset="0"></div>
@@ -450,7 +477,7 @@ title: Rachel and Paul 4 eva
         </div>
       </div>
       <div class="container-separator"></div>
-      <h3>Flower Girl</h3>
+      <h3 id="flower_girl">Flower Girl</h3>
       <div>
         <div class="images">
           <div class="circular xyla selected" data-offset="0"></div>
@@ -534,7 +561,7 @@ title: Rachel and Paul 4 eva
     </div>
 
     <div class="container-fixed container-fixed-small">
-      <h3>Hotels</h3>
+      <h3 id="hotels">Hotels</h3>
       <p>
         Our wedding falls on the weekend of the <a href="http://fqfi.org/frenchquarterfest" target="_">French Quarter Festival</a>. The good news is that there will be hundreds of free live music shows! The bad news is that hotels are more expensive and less available. Many of the hotels we found have early expirations for the block rate and also could only guarantee holding a few rooms. So make your reservations in advance to save yourself some money, and to ensure you have a place to lay your weary head after consuming copious numbers of hurricanes and sazeracs!   
       </p>
@@ -560,7 +587,7 @@ title: Rachel and Paul 4 eva
     <div class="container-fixed"><div class="container-separator"></div></div>
     
     <div class="container-fixed container-fixed-small">
-      <h3>Registry</h3>
+      <h3 id="registry">Registry</h3>
       <p>
         Our tiny New York City apartment makes acquiring new toys difficult, and your presence at our wedding is the best gift you could ever give (seriously!).
       </p> 
@@ -576,11 +603,11 @@ title: Rachel and Paul 4 eva
   </div>
   <div class="gap gap-50" style="background-image:url(images/main/indonesia.jpg);"></div>
 
-  <div id="nola" class="content">
+  <div id="nola_c" class="content">
     <div>
       <div class="content-heading">
         <img src="images/rn_webheader_left_alligator.jpg" />
-        <h2>NOLA</h2>
+        <h2 id="nola">NOLA</h2>
         <img src="images/rn_webheader_right_alligator.jpg" />
       </div>
       <div class="container-fixed container-border"></div>
@@ -592,7 +619,7 @@ title: Rachel and Paul 4 eva
       <p>
         To help you make the most of your trip (and to avoid the tourists traps!), we’ve put together a few of our favorite sights, tastes and sips in New Orleans, as well as in the greater South.
       </p>
-      <h3>Tours &amp; Classes</h3>
+      <h3 id="tours_and_classes">Tours &amp; Classes</h3>
       <p>
         There are lots of entertaining, informative walking and bus tours around the city, all of which contain a significant dose of New Orleans history and culture. Here are some options: 
       </p>
@@ -632,7 +659,7 @@ title: Rachel and Paul 4 eva
     
       
       <%= partial "eating" %>
-      <h3>Explore the South!</h3>
+      <h3 id="explore_the_south">Explore the South!</h3>
       <iframe src="https://mapsengine.google.com/map/embed?mid=zBqQFn71OnUg.kVSYdQWQwUU8" width="100%" height="400"></iframe>
       <%= partial "explore" %>
     </div>
