@@ -740,20 +740,17 @@ background-image: radial-gradient(circle farthest-side at center bottom, #FFFFFF
   position: absolute;
   text-align: left;
   display: none;
-/*  top: 55px;
-  left: 440px;
-  width: 154px;
-*/  list-style-type: none;
+  list-style-type: none;
 /*  border-bottom: solid #006729 1px;
   border-left: solid #006729 1px;
   border-right: solid #006729 1px;
-  border-bottom-left-radius: 10px;
+*/  border-bottom-left-radius: 10px;
   -webkit-border-bottom-left-radius: 10px;
   -moz-border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   -webkit-border-bottom-right-radius: 10px;
   -moz-border-bottom-right-radius: 10px;
-*/}
+}
 
 .nav-sub li a {
   text-decoration: none;
