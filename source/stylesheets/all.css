@@ -329,6 +329,14 @@ h2, h3, h4, h5 {
   background: url(/images/nola_friday.jpg) no-repeat;
   background-size: cover;
 }
+.nola-friday-crawfish {
+  background: url(/images/crawfish.jpg) no-repeat;
+  background-size: cover;
+}
+.nola-friday-cypress {
+  background: url(/images/cypress.jpg) no-repeat;
+  background-size: cover;
+}
 .the-elms {
   background: url(/images/the_elms.jpg) no-repeat;
   background-size: cover;
@@ -492,7 +500,7 @@ h2, h3, h4, h5 {
 }
 
 #festivities .circular-big {
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 10px;
   float: left;
 }
